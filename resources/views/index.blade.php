@@ -16,7 +16,7 @@
     <section id="home" class="pt-36 pb-2">
         <div class="container items-center justify-between mx-auto ">
             <div class="flex flex-wrap">
-                <div class="w-full self-center px-4 shadow-secondary border-double border-secondary">
+                <div class="w-full lg:w-1/2 self-center px-4 shadow-secondary border-double border-secondary">
                     <h1 class="text-base text-third pb-2">
                         Halo ✌️ Selamat Datang di Website Portfolio
                         <br>
@@ -30,6 +30,12 @@
                     text-primary bg-secondary py-3 px-8 rounded-full
                     hover:shadow-lg hover:opacity-80 transition 
                     duration-300 ease-in-out">Jelajahi <span class="fill-current"></span> </a>
+                </div>
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="relative mt-10 drop-shadow-2xl">
+                        <img src="img/me1.png" alt="me"
+                        class="max-w-full mx-auto md:w-auto">
+                    </div>
                 </div>
             </div>
         </div>
