@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite(['resources/css/app.css','resources/js/app.js'])
@@ -14,19 +15,19 @@
 
     {{-- Hero section start --}}
     <section id="home" class="pt-36 pb-2">
-        <div class="container items-center justify-between mx-auto ">
+        <div class="container items-center justify-between mx-auto text-center ">
             <div class="flex flex-wrap max-w-full">
                 <div class="w-full lg:w-1/2 self-center px-4 shadow-secondary border-double border-secondary">
                     <h1 class="text-base text-third pb-2">
                         <span class="text-2xl lg:text-4xl bg-secondary rounded-sm 
-                        mx-auto text-primary drop-shadow-secondary text-bold ">Eep Syaiful Nurohman </span>
+                        mx-auto text-primary font-bold ">Eep Syaiful Nurohman </span>
                         <br>
                         Web Developer
                     </h1>
                     <p class="text-secondary font-medium mb-5">
                         Sedang Belajar Programming terkhusus pada Website Development.
                     </p>
-                    <div class="flex items-center">
+                    <div class="flex items-center justify-center">
                         {{-- LinkedIn --}}
                         <a href="https://www.linkedin.com/in/eep-syaiful-nurohman-148442211/" 
                         target="_blank"
@@ -55,18 +56,24 @@
                             Portofolioku 
                         <span class="fill-current"></span> </a> --}}
                     </div>
-                    <div class="w-[150px] h-[50px] pt-5">
+                    <div class="flex items-center justify-center pt-5  ">
                         <button
                             class="w-[140px] h-[40px] shadow-2xl bg-third outline outline-offset-2 outline-1 outline-third hover:scale-[1.03] hover:outline-none duration-300 active:scale-[0.99]"
                         >
-                        <a class="font-bold" href="#">Portfolioku</a>
+                        <a class="font-bold" href="#portfolio">Portfolioku</a>
                         </button>
                     </div>
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
-                    <div class="relative mt-10 drop-shadow-2xl">
+                    <div class="relative mt-10">
                         <img src="img/me1.png" alt="me"
-                        class="max-w-full mx-auto md:w-auto">
+                        class="max-w-full mx-auto md:w-auto ">
+                        
+                        <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-48 translate-y-16 mb-20">
+                            <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800"><defs><filter id="nnneon-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feGaussianBlur stdDeviation="17 8" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur></filter><filter id="nnneon-filter2" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feGaussianBlur stdDeviation="10 17" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur></filter></defs><g stroke-width="16" stroke="hsl(0, 0%, 100%)" fill="none" transform="rotate(161, 400, 400)"><rect width="421" height="421" x="189.5" y="189.5" filter="url(#nnneon-filter)" rx="0" ry="0"></rect><rect width="421" height="421" x="309.5" y="189.5" filter="url(#nnneon-filter2)" opacity="1" rx="0" ry="0"></rect><rect width="421" height="421" x="69.5" y="189.5" filter="url(#nnneon-filter2)" opacity="1" rx="0" ry="0"></rect><rect width="421" height="421" x="189.5" y="189.5" rx="0" ry="0"></rect></g></svg>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -74,17 +81,38 @@
     </section>
     {{-- hero section end --}}
 
-    {{-- about section start --}}
-    {{-- about section end --}}
-
     {{-- Portfolio section start --}}
+    <section id="portfolio" class="pt-24 pb-12">
+        <div class="container items-center justify-between mx-auto">
+            <div class="flex border-t border-secondary pt-3">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h3 class="font-bold uppercase text-primary text-lg max-w-xl">Portfolio</h3>
+                    <h4 class="font-base text-third mb-4 text-lg lg:text-4xl">Work Collection</h4>
+                    <p class="text-secondary font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, vero!</p>
+                </div>
+            </div>
+        </div>
+    </section>
     {{-- Portfolio section end --}}
 
-    {{-- Footer start --}}
-    <footer class="bg-dark pt-24 pb-12 ">
+    {{-- MyArt section start --}}
+    <section class="pt-24 pb-12">
         <div class="container items-center justify-between mx-auto">
-            
-            <div class="w-full pt-10 border-t border-slate-700">
+            <div class="flex border-t border-secondary pt-3">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h3 class="font-bold uppercase text-primary text-lg max-w-xl">Gambar</h3>
+                    <h4 class="font-base text-third mb-4 text-lg lg:text-4xl">Hobi Saja</h4>
+                    <p class="text-secondary font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, vero!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- MyArt section end --}}
+
+    {{-- Footer start --}}
+    <footer class="pt-24 pb-12">
+        <div class="container items-center justify-between mx-auto">
+            <div class="w-full pt-10 border-t border-secondary">
                 <div class="flex items-center justify-center mb-5 ">
                     {{-- LinkedIn --}}
                     <a href="https://www.linkedin.com/in/eep-syaiful-nurohman-148442211/" 
